@@ -12,7 +12,7 @@ def extract_route(requisicao):
 
 
 def read_file(path):
-    lista = str(path).split(".")
+    lista = str(path)
     if lista[-1] == "txt" or lista[-1] == "html" or lista[-1] == "css" or lista[-1] == "js":
         with open(path, "rt") as file:
             text = file.read()
